@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>動起來｜基礎健身計畫</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#首頁" aria-label="動起來首頁">動<span>起來</span></a>
+    <nav aria-label="主要導覽">
+      <a href="#訓練">訓練內容</a>
+      <a href="#計畫">每週計畫</a>
+      <a href="#開始">開始運動</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="首頁">
+      <div class="hero-copy">
+        <p class="eyebrow">給剛起步的你</p>
+        <h1>把今天的<br><em>一小步</em>，變成更好的自己。</h1>
+        <p class="intro">不用器材、不必追求完美。從每天 15 分鐘開始，建立屬於你的健康節奏。</p>
+        <a class="button" href="#開始">開始我的第一週 <span>↓</span></a>
+        <div class="mini-stats">
+          <div><strong>15</strong><span>分鐘就能開始</span></div>
+          <div><strong>3</strong><span>種基礎訓練</span></div>
+          <div><strong>100%</strong><span>新手友善</span></div>
+        </div>
+        <div class="coach-intro">
+          <span class="coach-mark">教練</span>
+          <div><strong>為山</strong><span>擁有 3 年健身教學經驗，陪你穩穩開始。</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="shape shape-one"></div>
+        <div class="shape shape-two"></div>
+        <div class="person">
+          <span class="head"></span><span class="body"></span><span class="arm arm-left"></span><span class="arm arm-right"></span><span class="leg leg-left"></span><span class="leg leg-right"></span>
+        </div>
+        <p>MOVE<br>WITH<br>JOY</p>
+      </div>
+    </section>
+
+    <section class="training section" id="訓練">
+      <div class="section-title"><p class="eyebrow">從這裡開始</p><h2>找到適合你的訓練</h2></div>
+      <div class="cards">
+        <article class="card orange"><span class="card-number">01</span><div class="card-icon">↗</div><h3>全身啟動</h3><p>用簡單的動作喚醒身體，建立穩定的運動基礎。</p><span class="tag">15 分鐘</span></article>
+        <article class="card blue"><span class="card-number">02</span><div class="card-icon">◒</div><h3>核心力量</h3><p>強化腹部與背部，讓每個日常動作都更輕鬆。</p><span class="tag">20 分鐘</span></article>
+        <article class="card cream"><span class="card-number">03</span><div class="card-icon">⌁</div><h3>伸展放鬆</h3><p>舒展緊繃肌肉，為忙碌的一天留下舒服的空間。</p><span class="tag">10 分鐘</span></article>
+      </div>
+    </section>
+
+    <section class="plan section" id="計畫">
+      <div class="section-title"><p class="eyebrow">簡單但持續</p><h2>你的第一週計畫</h2></div>
+      <div class="week" id="weekPlan"></div>
+    </section>
+
+    <section class="start" id="開始">
+      <p class="eyebrow">今天，就是好時機</p>
+      <h2>準備好動起來了嗎？</h2>
+      <p>按下開始，完成你的第一個 15 分鐘。</p>
+      <button class="button light" id="startButton">開始計時 <span>→</span></button>
+      <p class="timer" id="timer" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>動起來 · 為你的健康而動</footer>
+  <script src="script.js"></script>
+</body>
+</html>
